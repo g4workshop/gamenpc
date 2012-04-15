@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C44A5147153AC3BE00AF5B07 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44A5146153AC3BE00AF5B07 /* main.cpp */; };
 		C44A5149153AC3BE00AF5B07 /* gamenpc.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C44A5148153AC3BE00AF5B07 /* gamenpc.1 */; };
+		C44A5150153AC3ED00AF5B07 /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44A514F153AC3ED00AF5B07 /* npc.cpp */; };
+		C44A5156153AC3FB00AF5B07 /* alog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44A5151153AC3FB00AF5B07 /* alog.cpp */; };
+		C44A5157153AC3FB00AF5B07 /* packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44A5153153AC3FB00AF5B07 /* packet.cpp */; };
+		C44A5159153AC40800AF5B07 /* libevent.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C44A5158153AC40800AF5B07 /* libevent.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +29,14 @@
 
 /* Begin PBXFileReference section */
 		C44A5142153AC3BE00AF5B07 /* gamenpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gamenpc; sourceTree = BUILT_PRODUCTS_DIR; };
-		C44A5146153AC3BE00AF5B07 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C44A5148153AC3BE00AF5B07 /* gamenpc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = gamenpc.1; sourceTree = "<group>"; };
+		C44A514F153AC3ED00AF5B07 /* npc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = npc.cpp; sourceTree = "<group>"; };
+		C44A5151153AC3FB00AF5B07 /* alog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = alog.cpp; path = ../../gameshare/alog.cpp; sourceTree = "<group>"; };
+		C44A5152153AC3FB00AF5B07 /* alog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alog.h; path = ../../gameshare/alog.h; sourceTree = "<group>"; };
+		C44A5153153AC3FB00AF5B07 /* packet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = packet.cpp; path = ../../gameshare/packet.cpp; sourceTree = "<group>"; };
+		C44A5154153AC3FB00AF5B07 /* packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = packet.h; path = ../../gameshare/packet.h; sourceTree = "<group>"; };
+		C44A5155153AC3FB00AF5B07 /* sysdefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sysdefine.h; path = ../../gameshare/sysdefine.h; sourceTree = "<group>"; };
+		C44A5158153AC40800AF5B07 /* libevent.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libevent.dylib; path = usr/local/lib/libevent.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44A5159153AC40800AF5B07 /* libevent.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,7 @@
 		C44A5137153AC3BE00AF5B07 = {
 			isa = PBXGroup;
 			children = (
+				C44A5158153AC40800AF5B07 /* libevent.dylib */,
 				C44A5145153AC3BE00AF5B07 /* gamenpc */,
 				C44A5143153AC3BE00AF5B07 /* Products */,
 			);
@@ -60,7 +71,12 @@
 		C44A5145153AC3BE00AF5B07 /* gamenpc */ = {
 			isa = PBXGroup;
 			children = (
-				C44A5146153AC3BE00AF5B07 /* main.cpp */,
+				C44A5151153AC3FB00AF5B07 /* alog.cpp */,
+				C44A5152153AC3FB00AF5B07 /* alog.h */,
+				C44A5153153AC3FB00AF5B07 /* packet.cpp */,
+				C44A5154153AC3FB00AF5B07 /* packet.h */,
+				C44A5155153AC3FB00AF5B07 /* sysdefine.h */,
+				C44A514F153AC3ED00AF5B07 /* npc.cpp */,
 				C44A5148153AC3BE00AF5B07 /* gamenpc.1 */,
 			);
 			path = gamenpc;
@@ -117,7 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C44A5147153AC3BE00AF5B07 /* main.cpp in Sources */,
+				C44A5150153AC3ED00AF5B07 /* npc.cpp in Sources */,
+				C44A5156153AC3FB00AF5B07 /* alog.cpp in Sources */,
+				C44A5157153AC3FB00AF5B07 /* packet.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +190,7 @@
 		C44A514D153AC3BE00AF5B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -179,6 +198,7 @@
 		C44A514E153AC3BE00AF5B07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
