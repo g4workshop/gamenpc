@@ -1,0 +1,209 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C44A5147153AC3BE00AF5B07 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44A5146153AC3BE00AF5B07 /* main.cpp */; };
+		C44A5149153AC3BE00AF5B07 /* gamenpc.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C44A5148153AC3BE00AF5B07 /* gamenpc.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C44A5140153AC3BE00AF5B07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C44A5149153AC3BE00AF5B07 /* gamenpc.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C44A5142153AC3BE00AF5B07 /* gamenpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gamenpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44A5146153AC3BE00AF5B07 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C44A5148153AC3BE00AF5B07 /* gamenpc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = gamenpc.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C44A513F153AC3BE00AF5B07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C44A5137153AC3BE00AF5B07 = {
+			isa = PBXGroup;
+			children = (
+				C44A5145153AC3BE00AF5B07 /* gamenpc */,
+				C44A5143153AC3BE00AF5B07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C44A5143153AC3BE00AF5B07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C44A5142153AC3BE00AF5B07 /* gamenpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C44A5145153AC3BE00AF5B07 /* gamenpc */ = {
+			isa = PBXGroup;
+			children = (
+				C44A5146153AC3BE00AF5B07 /* main.cpp */,
+				C44A5148153AC3BE00AF5B07 /* gamenpc.1 */,
+			);
+			path = gamenpc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C44A5141153AC3BE00AF5B07 /* gamenpc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C44A514C153AC3BE00AF5B07 /* Build configuration list for PBXNativeTarget "gamenpc" */;
+			buildPhases = (
+				C44A513E153AC3BE00AF5B07 /* Sources */,
+				C44A513F153AC3BE00AF5B07 /* Frameworks */,
+				C44A5140153AC3BE00AF5B07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gamenpc;
+			productName = gamenpc;
+			productReference = C44A5142153AC3BE00AF5B07 /* gamenpc */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C44A5139153AC3BE00AF5B07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "G4 Workshop";
+			};
+			buildConfigurationList = C44A513C153AC3BE00AF5B07 /* Build configuration list for PBXProject "gamenpc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C44A5137153AC3BE00AF5B07;
+			productRefGroup = C44A5143153AC3BE00AF5B07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C44A5141153AC3BE00AF5B07 /* gamenpc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C44A513E153AC3BE00AF5B07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44A5147153AC3BE00AF5B07 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C44A514A153AC3BE00AF5B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C44A514B153AC3BE00AF5B07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C44A514D153AC3BE00AF5B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C44A514E153AC3BE00AF5B07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C44A513C153AC3BE00AF5B07 /* Build configuration list for PBXProject "gamenpc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44A514A153AC3BE00AF5B07 /* Debug */,
+				C44A514B153AC3BE00AF5B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C44A514C153AC3BE00AF5B07 /* Build configuration list for PBXNativeTarget "gamenpc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44A514D153AC3BE00AF5B07 /* Debug */,
+				C44A514E153AC3BE00AF5B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C44A5139153AC3BE00AF5B07 /* Project object */;
+}
